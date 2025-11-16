@@ -1,10 +1,4 @@
-setTimeout(function() {
-  var bg = document.getElementById("loader-bg-sgutech");
-  bg.style.opacity = "0";
-  setTimeout(function() {
-    bg.style.display = "none";
-  }, 800);
-}, 3000);
+
 document.getElementById('sgu-tech-made-adSettingsForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
