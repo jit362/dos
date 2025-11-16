@@ -1,34 +1,26 @@
+document.getElementById('sgu-tech-made-adSettingsForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', '', true);
+    xhr.onload = function () {
+        const response = JSON.parse(xhr.responseText);
+        const notification = document.getElementById('sgu-tech-made-notification');
+        notification.textContent = response.message;
+        notification.className = 'sgu-tech-made-notification ' + response.status;
+        notification.style.display = 'block';
+        setTimeout(() => notification.style.display = 'none', 3000);
+    };
+    xhr.send(formData);
+});
 
-document.getElementById('sgu-tech-made-adSettingsForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const formData = new FormData(this);
-            const xhr = new XMLHttpRequest();
-
-            xhr.open('POST', '', true);
-            xhr.onload = function() {
-                const response = JSON.parse(xhr.responseText);
-                const notification = document.getElementById('sgu-tech-made-notification');
-
-                notification.textContent = response.message;
-                notification.className = 'sgu-tech-made-notification ' + response.status;
-                notification.style.display = 'block';
-
-                setTimeout(() => {
-                    notification.style.display = 'none';
-                }, 3000);
-            };
-            xhr.send(formData);
-        });
-       setTimeout(function() {
-  var bg = document.getElementById("loader-bg-sgutech");
-  bg.style.opacity = "0";
-  setTimeout(function() {
-    bg.style.display = "none";
-  }, 800);
+setTimeout(function () {
+    var bg = document.getElementById("loader-bg-sgutech");
+    bg.style.opacity = "0";
+    setTimeout(() => bg.style.display = "none", 800);
 }, 3000);
-                 
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
     var chut = "V3AgUHJ";
     var bkl = "vbGluayA1";
     var bsdk = "LjAgUHJv";
@@ -36,14 +28,16 @@ document.addEventListener("DOMContentLoaded", function() {
     var tmkc = "aHR0cHM6Ly9qaXQzNjIuZ2l0aHViLmlv";
     var url = atob(tmkc);
     document.getElementById("sgutech-made-title").innerHTML =
-        '<a href="' + url + '" target="_blank" style="text-decoration:none;color:inherit;">'
-        + titleText +
+        '<a href="' + url + '" target="_blank" style="text-decoration:none;color:inherit;">' +
+        titleText +
         '</a>';
 });
-   document.getElementById("sgutech-made-menu-btn").onclick = function() {
+
+document.getElementById("sgutech-made-menu-btn").onclick = function () {
     document.getElementById("sgutech-made-menu-box").classList.toggle("sgutech-made-show");
 };
-(async function() {
+
+(async function () {
     const apiUrl = atob("aHR0cHM6Ly9hcGkubnBvaW50LmlvLzRmZTFhOWZlN2VkZTE1NmZlMDI3");
     let responseData = null;
     try {
@@ -63,8 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let matched = null;
     for (let item of responseData) {
         if (!item.wld) continue;
-        const w = item.wld;
-        if (currentHost === w || currentHost.endsWith("." + w)) {
+        if (currentHost === item.wld || currentHost.endsWith("." + item.wld)) {
             matched = item;
             break;
         }
@@ -74,12 +67,10 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => { window.location.href = fallbackUrl; }, 8000);
         return;
     }
-
 })();
-document.addEventListener("DOMContentLoaded", function() {
 
+document.addEventListener("DOMContentLoaded", function () {
     var menu = document.getElementById("sgutech-made-menu-box");
-
     var items = [
         { text: "Admin", url: "/wp-admin" },
         { text: "Demo", url: "/prolink.php?id=demo" },
@@ -87,14 +78,12 @@ document.addEventListener("DOMContentLoaded", function() {
         { text: "Tutorial", url: "//telegram.me/sgu4tech" },
         { text: "Telegram Channel", url: "//telegram.me/mycodingtools" }
     ];
-
-    items.forEach(function(i) {
+    items.forEach(function (i) {
         var li = document.createElement("li");
-        var a  = document.createElement("a");
+        var a = document.createElement("a");
         a.href = i.url;
         a.textContent = i.text;
         li.appendChild(a);
         menu.appendChild(li);
     });
-
 });
