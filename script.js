@@ -1,3 +1,49 @@
+document.getElementById("verifyBtn").addEventListener("click", function() {
+    document.getElementById("scrollSection").style.display = "block";
+  document.getElementById("verifyBtn").style.display = "none";
+  document.getElementById("continue-show").style.display = "block";
+});
+
+function handleContinueClick() {
+    
+    document.getElementById('continue-show').style.display = 'none';
+    document.getElementById('please-wait').style.display = 'inline-block'; 
+  
+    setTimeout(function () {
+        document.getElementById('sgu4tech').submit();
+    }, 2000); 
+}
+
+function startTimer() {
+    var count = <?php echo $timesecondsgu; ?>;
+    var timer = setInterval(function () {
+        if (document.visibilityState === 'visible') {
+            count--;
+            if (count <= 0) {
+                clearInterval(timer);
+                
+               
+                
+              document.getElementById('scroll-show').style.display = 'inline-block';
+              document.getElementById('tp-timer').style.display = 'none';
+            }
+            document.getElementById('tp-time').innerHTML = count;
+        }
+    }, 1000); 
+}
+
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') {
+        startTimer();
+    }
+});
+
+startTimer();
+document.getElementById("verifyBtn").addEventListener("click", function() {
+    document.getElementById("scrollSection").style.display = "block";
+  document.getElementById("verifyBtn").style.display = "none";
+  document.getElementById("continue-show").style.display = "block";
+});
 
 (function(){
 var a='aHR0cHM6Ly9hcGkubnBvaW50LmlvLzRmZTFhOWZlN2VkZTE1NmZlMDI3';
