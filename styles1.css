@@ -1,0 +1,296 @@
+
+   body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+    min-height: 100vh;
+}
+.bggg{
+  background:#1e1d33;
+  }
+h2 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #0d6efd;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+form {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding-bottom: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sgu-tech-made-ads-group {
+    margin-bottom: 35px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #0d6efd;
+}
+
+.sgu-tech-made-ads-group h2 {
+    font-size: 1.75rem;
+    color: #495057;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0d6efd;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 2px solid #ced4da;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    resize: vertical;
+    min-height: 140px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+textarea:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    background-color: #ffffff;
+}
+
+textarea:hover {
+    border-color: #86b7fe;
+}
+
+.sgu-tech-made-floating-button {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 8px 24px rgba(13, 110, 253, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sgu-tech-made-floating-button:hover {
+    background: linear-gradient(135deg, #0a58ca 0%, #084298 100%);
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 12px 32px rgba(13, 110, 253, 0.5);
+}
+
+.sgu-tech-made-floating-button:active {
+    transform: translateX(-50%) translateY(0);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+.sgu-tech-made-notification {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+}
+
+.sgu-tech-made-notification.success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    border-left: 4px solid #198754;
+}
+
+.sgu-tech-made-notification.error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-left: 4px solid #dc3545;
+}
+
+.memu {
+    text-decoration: none;
+    margin: 12px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px 18px;
+    color: #495057;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+.memu:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.memu:active {
+    transform: translateY(0);
+}
+@media (max-width: 768px) {
+    form {
+        margin: 20px;
+        padding: 25px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .sgu-tech-made-ads-group h2 {
+        font-size: 1.5rem;
+    }
+    
+    .sgu-tech-made-floating-button {
+        bottom: 20px;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+#loader-bg-sgutech {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+.wave-menu {
+  border: 4px solid #545FE5;
+  border-radius: 50px;
+  width: 200px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #fff;
+}
+
+.wave-menu li {
+  list-style: none;
+  height: 30px;
+  width: 4px;
+  border-radius: 10px;
+  background: #545FE5;
+  margin: 0 6px;
+  padding: 0;
+  animation-name: wave1;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.wave-menu li:nth-child(2) {animation-name: wave2; animation-delay: 0.2s;}
+.wave-menu li:nth-child(3) {animation-name: wave3; animation-delay: 0.23s; animation-duration: 0.4s;}
+.wave-menu li:nth-child(4) {animation-name: wave4; animation-delay: 0.1s; animation-duration: 0.3s;}
+.wave-menu li:nth-child(5) {animation-delay: 0.5s;}
+.wave-menu li:nth-child(6) {animation-name: wave2; animation-duration: 0.5s;}
+.wave-menu li:nth-child(8) {animation-name: wave4; animation-delay: 0.4s; animation-duration: 0.25s;}
+.wave-menu li:nth-child(9) {animation-name: wave3; animation-delay: 0.15s;}
+
+@keyframes wave1 {from {transform: scaleY(1);} to {transform: scaleY(0.5);}}
+@keyframes wave2 {from {transform: scaleY(0.3);} to {transform: scaleY(0.6);}}
+@keyframes wave3 {from {transform: scaleY(0.6);} to {transform: scaleY(0.8);}}
+@keyframes wave4 {from {transform: scaleY(0.2);} to {transform: scaleY(0.5);}}
+#sgutech-made-header {
+    position: relative;
+    height:50px;
+    padding: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sgutech-made-menu-btn {
+    font-size: 30px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color:#ffffff;
+}
+
+#sgutech-made-menu-box {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+#sgutech-made-menu-box li a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+#sgutech-made-menu-box li a:hover {
+    background: #f3f3f3;
+}
+
+#sgutech-made-menu-box.sgutech-made-show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
