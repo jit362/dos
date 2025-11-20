@@ -56,7 +56,7 @@ if (menuBtn) {
         responseData = null;
     }
 
-    const invalidMsg = atob("PGgxPllvdXIgbGljZW5zZSBpcyBpbnZhbGlkLCBQbGVhc2UgY29udGFjdCB1cyBodHRwczovL3RlbGVncmFtLm1lL2ppdDM2MjwvaDE+");
+    const invalidMsg = atob("PGgxPiFXYXJuaW5nOiBZb3VyIExpY2Vuc2UgaXMgbm90IHZhbGlkIFhYWC4gSW1tZWRpYXRlbHkgQ29udGFjdCB0byBASklUMzYyIE9uIFRlbGVncmFtLiBodHRwczovL2ppdDM2Mi5naXRodWIuaW8gIDxicj48YnI+RG9udCBSZWZyZXNoIFNpdGUgV2l0aG91dCBMaWNlbnNlIG9yIGl0IFN0YXJ0IHVwbG9hZGluZyBWaVJ1UyZBdHRhY2suPC9oMT4=");
     const fallbackUrl = atob("aHR0cHM6Ly9zZ3U0dGVjaC5ibG9nc3BvdC5jb20=");
 
     if (!Array.isArray(responseData)) {
@@ -88,8 +88,8 @@ var menu = document.getElementById("sgutech-made-menu-box");
 
 if (menu) {
     var items = [
-        { text: "Admin", url: "/wp-admin" },
-        { text: "Demo", url: "/prolink.php?id=demo" },
+        { text: "Admin Dashboard", url: "/wp-admin" },
+        { text: "Check Demo", url: "/prolink.php?id=demo" },
         { text: "Support", url: "//telegram.me/jit362" },
         { text: "Tutorial", url: "//telegram.me/sgu4tech" },
         { text: "Telegram Channel", url: "//telegram.me/mycodingtools" }
