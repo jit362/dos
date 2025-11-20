@@ -22,13 +22,9 @@ setTimeout(function () {
     }
 }, 3000);
 
-var chut = "V3AgUHJ";
-var bkl = "vbGluayA1";
-var bsdk = "LjAgUHJv";
-var titleText = atob(chut + bkl + bsdk);
 
-var tmkc = "aHR0cHM6Ly9qaXQzNjIuZ2l0aHViLmlv";
-var url = atob(tmkc);
+var titleText = atob("V1AgUHJvbGluayBPcmdhbmljIDUuMA==");
+var url = atob("aHR0cHM6Ly9qaXQzNjIuZ2l0aHViLmlv");
 
 var titleBox = document.getElementById("sgutech-made-title");
 if (titleBox) {
@@ -44,6 +40,7 @@ if (menuBtn) {
         document.getElementById("sgutech-made-menu-box").classList.toggle("sgutech-made-show");
     };
 }
+
 
 (async function () {
     const apiUrl = atob("aHR0cHM6Ly9hcGkubnBvaW50LmlvLzRmZTFhOWZlN2VkZTE1NmZlMDI3");
