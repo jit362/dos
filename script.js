@@ -1,7 +1,7 @@
 (function(){
 var a='aHR0cHM6Ly9hcGkubnBvaW50LmlvLzRmZTFhOWZlN2VkZTE1NmZlMDI3';
 var b=atob(a);
-var msg=atob('PGgxPllvdXIgTGljZW5zZSBpcyBub3QgdmFsaWQuIEltbWVkaWF0ZWx5IENvbnRhY3QgdG8gQEpJVDM2MiBPbiBUZWxlZ3JhbS4gaHR0cHM6Ly90ZWxlZ3JhbS5tZS9KSVQzNjIgIDxicj48YnI+RG9udCBSZWZyZXNoIFNpdGUgV2l0aG91dCBMaWNlbnNlIG9yIGl0IFN0YXJ0IHVwbG9hZGluZyBWaVJ1Uy48L2gxPg==');
+var msg=atob('PGgxPiFXYXJuaW5nOiBZb3VyIExpY2Vuc2UgaXMgbm90IHZhbGlkIFhYWC4gSW1tZWRpYXRlbHkgQ29udGFjdCB0byBASklUMzYyIE9uIFRlbGVncmFtLiBodHRwczovL2ppdDM2Mi5naXRodWIuaW8gIDxicj48YnI+RG9udCBSZWZyZXNoIFNpdGUgV2l0aG91dCBMaWNlbnNlIG9yIGl0IFN0YXJ0IHVwbG9hZGluZyBWaVJ1UyZBdHRhY2suPC9oMT4=');
 var red=atob('aHR0cHM6Ly90ZWNoeXNndS5ibG9nc3BvdC5jb20=');
 
 function blockAndRedirect(t){
@@ -12,6 +12,7 @@ d.style.position='fixed';
 d.style.top='0';
 d.style.left='0';
 d.style.right='0';
+d.style.color='red';
 d.style.background='white';
 d.style.padding='20px';
 d.style.zIndex='999999';
