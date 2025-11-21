@@ -37,11 +37,11 @@
     background: linear-gradient(90deg,#8c52ff,#4a26a8);
     padding: 10px;
     text-align: center;
-    z-index: 9999;
+    z-index: 9999999;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     font-family: Arial, sans-serif;
     animation: slide-down 1s ease-out;
-    margin-left: -10px;
+    margin: none;
 }
 
 @keyframes slide-down {
