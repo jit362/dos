@@ -119,7 +119,7 @@ textarea:hover {
 
 .sgu-tech-made-notification {
     position: fixed;
-    top: 30px;
+    top:80% ;
     left: 50%;
     transform: translateX(-50%);
     padding: 16px 30px;
