@@ -28,20 +28,20 @@
 }
 
 .sgu-tech-mysteps {
-    color: yellow;
+    color: white;
     font-weight: bold;
     font-size: 1.2em;
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(90deg,#8c52ff,#4a26a8);
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
     padding: 10px;
     text-align: center;
     z-index: 9999999;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     font-family: Arial, sans-serif;
     animation: slide-down 1s ease-out;
-    margin: none;
+    margin: 0;
 }
 
 @keyframes slide-down {
@@ -67,8 +67,8 @@
 }
 
 #tp-time {
-    font-weight: 600;
-    color: #fff;
+    font-weight: 700;
+    color: yellow;
 }
 
 .sgu-tech-made-circular-progress {
