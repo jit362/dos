@@ -16,15 +16,15 @@
 }
 
 .mct-blue {
-    background: linear-gradient(135deg,#5a7ce2 0,#8283e8 50%,#6624c8 51%,#565bd8 71%,#575cdb 100%);
+    background: linear-gradient(135deg,#ff8a00 0,#ff3d7f 40%,#c700ff 60%,#6a00ff 100%);
     background-size: 400% 400%;
     animation: AnimationName 3s ease infinite;
 }
 
 @keyframes AnimationName {
-    0% { background-position: 0 31%; }
-    50% { background-position: 100% 70%; }
-    100% { background-position: 0 31%; }
+    0% { background-position: 0 20%; }
+    50% { background-position: 100% 80%; }
+    100% { background-position: 0 20%; }
 }
 
 .sgu-tech-mysteps {
