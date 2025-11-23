@@ -32,6 +32,6 @@ var w=data[i].wld;
 if(!w) continue;
 if(host===w || host.endsWith("."+w)){ ok=true; break }
 }
-if(!ok){ blockAndRedirect(8000); return }
+if(!ok){ blockAndRedirect(10000); return }
 }).catch(()=>blockAndRedirect(5000));
 })();
