@@ -4,8 +4,8 @@
     style.textContent = `
         .adblock-banner {
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
             width: 100%;
             background: linear-gradient(135deg, #ff6b6b, #ee5a24);
             color: white;
