@@ -1,0 +1,98 @@
+.mct-btn {
+    border-radius: 100px;
+    border: none!important;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Nunito;
+    color: #fff!important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 11px 34px!important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.14);
+    box-shadow: 0 4px 9px rgba(0,0,0,.2);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.mct-blue {
+    background: linear-gradient(135deg,#ff8a00 0,#ff3d7f 40%,#c700ff 60%,#6a00ff 100%);
+    background-size: 400% 400%;
+    animation: AnimationName 3s ease infinite;
+}
+@keyframes AnimationName {
+    0% { background-position: 0 20%; }
+    50% { background-position: 100% 80%; }
+    100% { background-position: 0 20%; }
+}
+.mycoding-tools-made-mysteps {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
+    padding: 10px;
+    text-align: center;
+    z-index: 9999999;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    font-family: Arial, sans-serif;
+    animation: slide-down 1s ease-out;
+    margin: 0;
+}
+@keyframes slide-down {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+.tp-timer {
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none!important;
+    margin: auto;
+    font-size: 15px;
+    color: #fff!important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 5px 12px!important;
+    width: 250px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.14);
+    box-shadow: 0 4px 9px rgba(0,0,0,.2);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+#jittu-made-tp-time {
+    font-weight: 700;
+    color: yellow;
+}
+.mycoding-tools-made-circular-progress {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background: conic-gradient(#007bff 3.6deg,#ededed 0deg);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.mycoding-tools-made-circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.mycoding-tools-made-progress-value {
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    color: #007bff;
+}
+.mycoding-tools-made-continue-show {
+    display: inline-block;
+}
+.sgutech-made-cytn {
+    font-weight: 600;
+    font-size: 16px;
+}
