@@ -10,7 +10,7 @@ sp.className="sgutech-made-spinner";
 
 let tx=document.createElement("div");
 tx.className="sgutech-made-load-text";
-tx.innerText="Loading...";
+tx.innerText="❤️ Kesa Rha Valentine ?";
 
 wrap.appendChild(sp);
 wrap.appendChild(tx);
